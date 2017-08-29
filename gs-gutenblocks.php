@@ -117,7 +117,7 @@ class GS_Gutenblocks {
 						 *
 						 * @see https://facebook.github.io/react/docs/forms.html#controlled-components
 						 */
-						function handleChange( event ) {
+						function handleLabelChange( event ) {
 							props.setAttributes({
 								label : event.target.value
 							});
@@ -154,7 +154,7 @@ class GS_Gutenblocks {
 									 */
 									key : 'gs-gutenblocks/button/label',
 									type : 'text',
-									onChange : handleChange,
+									onChange : handleLabelChange,
 									value : props.attributes.label
 								}
 							)
